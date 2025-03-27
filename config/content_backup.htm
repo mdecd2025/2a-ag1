@@ -36,14 +36,61 @@
 </div>
 <h1>Tasks</h1>
 <h2>Task1</h2>
-<p>Q1：什麼是 Webots? Webots 是一款開源的機器人模擬軟體，專為機器人研究、教育和工業應用設計。它允許用戶在 3D 環境中設計、測試和模擬機器人，並支援多種程式語言（如 C、C++、Python、MATLAB 和 ROS）。</p>
-<p>Q2：我可以用 Webots 做什麼? Webots 可用於以下用途： 機器人開發與測試：在虛擬環境中設計和測試機器人，避免硬體損壞。 人工智慧與機器學習：訓練機器人進行自動化任務，如導航、圖像識別等。 教育與學習：提供學生和研究人員一個直觀的平台來學習機器人學和控制理論。 多機器人協作：模擬多個機器人在同一環境中的交互與協作。 ROS（Robot Operating System）整合：與 ROS 無縫整合，使開發的控制器能夠在現實世界的機器人上運行。</p>
-<p>Q3：要使用 Webots，我需要知道什麼? 基本程式設計：熟悉 C、C++、Python 或 MATLAB 之一，因為 Webots 支援這些語言來編寫控制器。 機器人學基礎：了解機器人的運動學、感測器、致動器等基本概念。 3D 環境與物理引擎：了解 Webots 如何模擬物理現象（如重力、碰撞、摩擦）。 Webots 環境：熟悉 Webots 介面、世界建模、機器人設定等基本操作。</p>
-<p>Q4：什麼是世界（World）? 在 Webots 中，"世界" 指的是模擬環境的整體，包括： 地形與背景（如地面、天空） 物件（如障礙物、建築物） 燈光與攝影機（用於視覺化與模擬） 機器人（具有感測器、致動器的可控制實體） Webots 的世界文件使用 .wbt 格式，並基於 VRML（Virtual Reality Modeling Language）。</p>
-<p>Q5：什麼是控制器（Controller）? 控制器是機器人的控制程式，它決定機器人的行為。控制器可以用 C、C++、Python、MATLAB 編寫，並用於處理感測器輸入、計算動作並發送指令給機器人的致動器。例如，一個簡單的控制器可以讓機器人根據攝影機輸入來避開障礙物。</p>
-<p>Q6：什麼是監督控制器（Supervisor Controller）? 監督控制器是一種特殊的控制器，它可以控制整個模擬環境，而不僅僅是單個機器人。它能夠： 讀取與修改機器人狀態（例如位置、方向） 創建或刪除物件 控制世界時間（如重置模擬） 與多個機器人交互 監督控制器通常用於高層次控制，例如監控多個機器人、進行自動化測試或模擬複雜場景。</p>
+<p>Q1：什麼是 Webots?</p>
+<p>Webots 是一款開源的機器人模擬軟體，專為機器人研究、教育和工業應用設計。它允許用戶在 3D 環境中設計、測試和模擬機器人，並支援多種程式語言（如 C、C++、Python、MATLAB 和 ROS）。</p>
+<p>Q2：我可以用 Webots 做什麼?</p>
+<p>Webots 可用於以下用途： 機器人開發與測試：在虛擬環境中設計和測試機器人，避免硬體損壞。 人工智慧與機器學習：訓練機器人進行自動化任務，如導航、圖像識別等。 教育與學習：提供學生和研究人員一個直觀的平台來學習機器人學和控制理論。 多機器人協作：模擬多個機器人在同一環境中的交互與協作。 ROS（Robot Operating System）整合：與 ROS 無縫整合，使開發的控制器能夠在現實世界的機器人上運行。</p>
+<p>Q3：要使用 Webots，我需要知道什麼?</p>
+<p>基本程式設計：熟悉 C、C++、Python 或 MATLAB 之一，因為 Webots 支援這些語言來編寫控制器。 機器人學基礎：了解機器人的運動學、感測器、致動器等基本概念。 3D 環境與物理引擎：了解 Webots 如何模擬物理現象（如重力、碰撞、摩擦）。 Webots 環境：熟悉 Webots 介面、世界建模、機器人設定等基本操作。</p>
+<p>Q4：什麼是世界（World）?</p>
+<p>在 Webots 中，"世界" 指的是模擬環境的整體，包括： 地形與背景（如地面、天空） 物件（如障礙物、建築物） 燈光與攝影機（用於視覺化與模擬） 機器人（具有感測器、致動器的可控制實體） Webots 的世界文件使用 .wbt 格式，並基於 VRML（Virtual Reality Modeling Language）。</p>
+<p>Q5：什麼是控制器（Controller）?</p>
+<p>控制器是機器人的控制程式，它決定機器人的行為。控制器可以用 C、C++、Python、MATLAB 編寫，並用於處理感測器輸入、計算動作並發送指令給機器人的致動器。例如，一個簡單的控制器可以讓機器人根據攝影機輸入來避開障礙物。</p>
+<p>Q6：什麼是監督控制器（Supervisor Controller）?</p>
+<p>監督控制器是一種特殊的控制器，它可以控制整個模擬環境，而不僅僅是單個機器人。它能夠： 讀取與修改機器人狀態（例如位置、方向） 創建或刪除物件 控制世界時間（如重置模擬） 與多個機器人交互 監督控制器通常用於高層次控制，例如監控多個機器人、進行自動化測試或模擬複雜場景。</p>
 <p></p><h2>Task2</h2>
-<h3>w3</h3>
+<h2>Task3</h2>
+<h2>Task4</h2>
+<h2>Task5</h2>
+<p><span>請整理 <a class="anchor_edefb8 anchorUnderlineOnHover_edefb8" href="https://cyberbotics.com/doc/guide/introduction-to-webots" rel="noreferrer noopener" role="button" tabindex="0" target="_blank" title="https://cyberbotics.com/doc/guide/introduction-to-webots">https://cyberbotics.com/doc/guide/introduction-to-webots</a> 中重要的英文單字與用法, 並且針對其中所使用的英文文法逐句說明:</span></p>
+<p><span>重要單字及用法解析 Simulation </span><span>- 模擬</span><span> Webots 用於創建機器人模擬的環境，這裡指的是模擬機器人的行為和環境反應。</span><span> Rapid prototyping </span><span>- 快速原型設計</span><span> 這是一種開發過程，用來快速創建和測試產品原型。</span><span> Locomotion schemes </span><span>- 移動方式</span><span> 指的是機器人移動的方式或模式，如輪式、腿部式或飛行式。</span><span> Actuators </span><span>- 執行器</span><span> 是使機器人運作的裝置，如馬達、車輪等。</span><span> Controller </span><span>- 控制器</span><span> 在 Webots 中，控制器是負責控制機器人行為的程式。</span><span> Supervisor Controller </span><span>- 監控控制器</span><span> 這種控制器可以執行人類操作員通常才會執行的任務，並控制整個模擬環境。</span><span> Physics plugin </span><span>- 物理插件</span><span> 用來修改 Webots 模擬中的物理行為。</span><span> 文法分析 </span><span>"Webots is a professional mobile robot simulation software package</span><span>.</span><span>"</span><span> Webots </span><span>(主詞</span><span>) </span><span>+ is </span><span>(連繫動詞</span><span>) </span><span>+ a professional mobile robot simulation software package </span><span>(主詞補語</span><span>)。</span><span> 這句是簡單的描述句，告訴我們 Webots 是一款專業的移動機器人模擬軟體。</span><span> </span><span>"It offers a rapid prototyping environment</span><span>, that allows the user to create 3D virtual worlds with physics properties such as mass</span><span>, joints</span><span>, friction coefficients</span><span>, etc</span><span>.</span><span>"</span><span> 這句中使用了定語從句 </span><span>"that allows the user to create</span><span>.</span><span>.</span><span>.</span><span>"，修飾前面的環境。</span><span> </span><span>"that allows</span><span>"</span><span>: 用來描述這個環境具備的功能，這是一個限定性定語從句。</span><span> </span><span>"The user can add simple passive objects or active objects called mobile robots</span><span>.</span><span>"</span><span> </span><span>"called mobile robots</span><span>" 是分詞短語，修飾 </span><span>"active objects</span><span>"。這裡的 </span><span>"called</span><span>" 用來說明 </span><span>"active objects</span><span>" 的名稱是 </span><span>"mobile robots</span><span>"。</span><span> </span><span>"Webots also contains a number of interfaces to real mobile robots</span><span>, so that once your simulated robot behaves as expected</span><span>, you can transfer its control program to a real robot like e</span><span>-puck</span><span>, DARwIn</span><span>-OP</span><span>, Nao</span><span>, etc</span><span>.</span><span>"</span><span> </span><span>"so that</span><span>" 這個引導的目的從句解釋了為什麼 Webots 提供這些接口（目的是為了當模擬機器人按預期運行時，可以將控制程式轉移到真實機器人）。</span><span> </span><span>"A world</span><span>, in Webots</span><span>, is a 3D description of the properties of robots and of their environment</span><span>.</span><span>"</span><span> 這是定義句，用來解釋 </span><span>"world</span><span>" 是什麼。句中的 </span><span>"in Webots</span><span>" 用來說明這個概念是在 Webots 中的特定含義。</span><span> </span><span>"A controller is a computer program that controls a robot specified in a world file</span><span>.</span><span>"</span><span> 這是一個定義句，說明了什麼是 </span><span>"controller</span><span>"。其中 </span><span>"that controls</span><span>" 是定語從句，修飾 </span><span>"controller</span><span>"。</span><span> 常見的英文文法結構 定義句：通常用來解釋某個名詞的含義。</span><span> 例子：</span><span>"A world is a 3D description of the properties of robots</span><span>.</span><span>"</span></p>
+<p><span>定語從句：用來修飾名詞，提供更多描述。</span><span> 例子：</span><span>"A controller is a program that controls a robot</span><span>.</span><span>"</span><span> 目的從句：用來說明某一行動的目的。</span><span> 例子：</span><span>"so that you can transfer its control program to a real robot</span><span>.</span><span>"</span><span> 條件句：通常描述在某些條件下會發生的情況。</span><span> 例子：</span><span>"once your simulated robot behaves as expected</span><span>, you can transfer its control program</span><span>.</span><span>.</span><span>.</span><span>"</span><span> 這篇資料簡單而清楚地介紹了 Webots 的基本功能及其應用，並且在文法上多使用定義性和解釋性的句型，幫助讀者理解軟體的各個方面。</span></p>
+<p><span></span></p>
+<p><span></span></p>
+<ol aria-label="顏家民 中的訊息" class="scrollerInner__36d07" data-list-id="chat-messages" role="list" tabindex="0">
+<li aria-setsize="-1" class="messageListItem__5126c" id="chat-messages-1354734015109922932-1354761728449187911">
+<div aria-labelledby="message-username-1354760945406185542 uid_1 message-content-1354761728449187911 uid_2 message-timestamp-1354761728449187911" aria-roledescription="傳送訊息" aria-setsize="-1" class="message__5126c cozyMessage__5126c wrapper_c19a55 cozy_c19a55 zalgo_c19a55" data-list-item-id="chat-messages___chat-messages-1354734015109922932-1354761728449187911" role="article" tabindex="-1">
+<div class="contents_c19a55">
+<div class="markup__75297 messageContent_c19a55"><span></span></div>
+<div class="markup__75297 messageContent_c19a55"><span>請摘要出下列內容</span><span>: </span><span>(放入英文文章內容</span><span>)</span></div>
+</div>
+<div class="buttonContainer_c19a55">
+<div aria-label="訊息操作" class="buttons__5126c container__040f0" role="group">
+<div class="buttonsInner__5126c popover_f84418 popoverReactionHoverBar_f84418 wrapper_f7ecac">
+<div aria-label="點擊 thumbsup 反應" class="hoverBarButton_f84418 button_f7ecac" role="button" tabindex="0">
+<div class="icon_f84418 buttonContent_f84418">
+<div aria-label="" class="emoji emoji__040f0" data-name="👍" data-type="emoji" role="img"></div>
+</div>
+</div>
+<div aria-label="點擊 eyes 反應" class="hoverBarButton_f84418 button_f7ecac" role="button" tabindex="0">
+<div class="icon_f84418 buttonContent_f84418">
+<div aria-label="" class="emoji emoji__040f0" data-name="👀" data-type="emoji" role="img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-labelledby="message-username-1354760945406185542 uid_1 message-content-1354761821202022481 uid_2 message-timestamp-1354761821202022481" aria-roledescription="傳送訊息" aria-setsize="-1" class="message__5126c cozyMessage__5126c wrapper_c19a55 cozy_c19a55 zalgo_c19a55" data-list-item-id="chat-messages___chat-messages-1354734015109922932-1354761821202022481" role="article" tabindex="-1">
+<div class="contents_c19a55">
+<div class="markup__75297 messageContent_c19a55" id="message-content-1354761821202022481"><span>Webots 使用者指南 R2025a 摘要：Webots 介紹 什麼是 Webots？ Webots 是一款專業的移動機器人模擬軟體。它允許使用者創建具有物理屬性的 3D 虛擬世界，如質量、關節和摩擦係數等。使用者可以添加被動物件或稱為移動機器人的主動物件，這些機器人可以具有不同的移動方式，如輪式、腿式或飛行機器人。這些機器人可裝配多種感測器和執行器（例如：相機、馬達、距離感測器等）。Webots 允許使用者為每個機器人編程，實現所需的行為。它還具有與實際機器人（如 e</span><span>-puck、Nao 和 DARwIn</span><span>-OP 等）接口的功能。</span><span> 我可以用 Webots 做什麼？ Webots 非常適合用於與移動機器人相關的研究和教育項目，涵蓋的領域包括：</span><span> 移動機器人原型設計（學術研究、汽車產業、航空業等）</span><span> 機器人運動研究（如人形機器人、四足機器人等）</span><span> 多代理研究（如群體智慧、協作型移動機器人等）</span><span> 自適應行為研究（如遺傳算法、神經網絡、人工智慧等）</span><span> 機器人教學（機器人學、C</span><span>/C</span><span>+</span><span>+</span><span>/Java</span><span>/Python 程式語言教學等）</span><span> 機器人比賽（例如 Robotstadium 或 Rat</span><span>'s Life）</span><span> 我需要知道什麼才能使用 Webots？ 若要開發模擬，您需要具備基本的程式設計知識，特別是 C、C</span><span>+</span><span>+、Java、Python 或 MATLAB 這些語言，用於編寫機器人控制程式。如果您不熟悉這些語言，也可以使用簡單的圖形化程式語言 BotStudio 來編程 e</span><span>-puck 和 Hemisson 機器人。若您希望創建自定義的機器人模型或在模擬環境中加入特殊物件，則需要具備基本的 3D 電腦圖形和 VRML97 描述語言知識。</span><span> 如何獲得使用者支援？ Cyberbotics 提供付費的使用者支援服務，包括 Premier Service 和定制開發服務。社群支援也可通過以下平台獲得：</span><span> Robotics StackExchange（用於詢問 Webots 相關技術問題）</span><span> GitHub Discussions（用於與 Webots 開發和文檔相關的問題）</span><span> GitHub Issues（用於報告 Webots 中的錯誤）</span><span> Discord（用於快速問題解答和社群討論）</span><span> Webots 模擬組成部分： Webots 模擬包括以下組件：</span><span> World 文件 </span><span>(</span><span>.wbt</span><span>)： 定義一個或多個機器人及其環境，並可能依賴外部的 PROTO 文件 </span><span>(</span><span>.proto</span><span>) 和紋理。</span><span> 控制程式： 用於控制上述機器人的程式，可使用 C、C</span><span>+</span><span>+、Java、Python 或 MATLAB 編寫。</span><span> 物理插件（可選）： 可用於修改 Webots 正常的物理行為。</span><span> 什麼是 World？ 在 Webots 中，世界是對機器人及其環境屬性的 3D 描述。它包含每個物件的位置、方向、幾何形狀、外觀（如顏色或亮度）、物理屬性、物件類型等的描述。世界是以階層結構組織的，物件可以包含其他物件（例如：一個機器人可以包含兩個車輪、一個距離感測器以及一個包含相機的關節）。世界文件不包含機器人的控制程式代碼，它僅指定每個機器人所需的控制程式名稱。世界文件儲存在 Webots 專案中的 </span><span>"worlds</span><span>" 子目錄。</span><span> 什麼是 Controller？ 控制器是控制在世界文件中指定的機器人的程式。控制器可以用 Webots 支援的任何程式語言編寫：C、C</span><span>+</span><span>+、Java、Python 或 MATLAB。當模擬啟動時，Webots 會啟動指定的控制程式，每個控制程式作為單獨的進程運行，並將控制程式與模擬中的機器人進行關聯。注意，儘管多個機器人可以使用相同的控制程式代碼，但每個機器人會啟動一個獨立的進程。</span><span> 什麼是 Supervisor Controller？ Supervisor 控制器是機器人控制器的一種，其 supervisor 欄位設置為 TRUE。它可以執行通常只能由人工操作員完成的操作，而不是由實際機器人完成。Supervisor 控制器可以用上述任一程式語言編寫，但與普通的機器人控制器不同，它將具有訪問特權操作的權限。特權操作包括模擬控制，例如將機器人移動到隨機位置、捕捉模擬畫面等。</span><span> 這篇指南簡要概述了 Webots 的功能、使用方法以及如何開始進行模擬和機器人編程。</span></div>
+<div class="markup__75297 messageContent_c19a55"><span></span></div>
+<div class="markup__75297 messageContent_c19a55"><span></span></div>
+<div class="markup__75297 messageContent_c19a55"><span></span></div>
+</div>
+</div>
+</li>
+</ol><h3>w3</h3>
 <p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/113a3d7e19b36a7672a136f3731ef07b095adeef/list_2a.py">列出 2a 學員作業網站與倉儲連結</a></p>
 <p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/29173e8b73ad422fd7c44bcd93658a3579d63633/list_stage_3.py">列出 2b 學員作業網站與倉儲連結</a></p>
 <p><a href="https://mdecd2025.github.io/hw-scrum-1/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9f3df9d865a7ceca8e799ee9b1a31602/raw/a4414e311503fac8d57d4f5e44999147c54cf7fa/list_2a_group.py">列出 2a 分組網站與倉儲連結</a></p>
